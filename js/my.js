@@ -88,11 +88,10 @@ function navToggle(x) {
 };
 
 /* PRELOAD FADEOUT FUNCTION */
-if (document.readyState != "complete") {
+if (document.readyState === "complete") {
 
-$(window).ready(function(){
 $('#preloader').fadeOut('slow',function(){$(this).remove();});
-});
+
 };
 
 $(window).ready(function(){
