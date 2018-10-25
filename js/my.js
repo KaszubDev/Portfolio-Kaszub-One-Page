@@ -88,13 +88,14 @@ function navToggle(x) {
 };
 
 /* PRELOAD FADEOUT FUNCTION */
-/*
-if (document.readyState === "complete") {
 
+$(window).on("load", function () {
+     
 $('#preloader').fadeOut('slow',function(){$(this).remove();});
 
-};
-*/
+});
+
+/*
 function onReady(callback) {
   var intervalId = window.setInterval(function() {
     if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -112,6 +113,7 @@ onReady(function() {
   setVisible('.page', true);
   setVisible('#preloader', false);
 });
+*/
 
 $(window).ready(function(){
 AOS.init({
