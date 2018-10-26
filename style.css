@@ -479,7 +479,7 @@ nav li {
     }
     .downArrow {
         font-size: 10px;
-        animation: bouncearrowMobile 2s infinite;
+        animation: bouncearrowMobile900 2s infinite;
     }
     .scrollUp {
         left: 85%;
@@ -539,7 +539,11 @@ nav li {
     }
     .social-items li {
     margin-right: 5px;
-}
+    }
+    .downArrow {
+        font-size: 10px;
+        animation: bouncearrowMobile600 2s infinite;
+    }
 }
 /*
 @keyframes bouncearrow {
@@ -553,10 +557,15 @@ nav li {
     50% {top: 680px }
     100% {top: 650px }
 }
-@keyframes bouncearrowMobile {
+@keyframes bouncearrowMobile900 {
     0% {top: 580px }
     50% {top: 600px }
     100% {top: 580px }
+}
+@keyframes bouncearrowMobile600 {
+    0% {top: 540px }
+    50% {top: 550px }
+    100% {top: 540px }
 }
 /* @media only screen and (max-width: 900px) {
    .menu {width:88%; position:absolute; height:30px;}
