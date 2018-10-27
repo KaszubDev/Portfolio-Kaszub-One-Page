@@ -125,9 +125,6 @@ nav li {
     margin: 15px;
     font-family: "Arial Black", Gadget, sans-serif;
 }
-.logo:hover {
-    color: white;
-}
 #ka {
     color: #ffff4d;
 }
@@ -543,6 +540,10 @@ nav li {
     .downArrow {
         font-size: 10px;
         animation: bouncearrowMobile600 2s infinite;
+    }
+    .logo {
+    font-weight: bold;
+    font-family: "Arial";
     }
 }
 /*
