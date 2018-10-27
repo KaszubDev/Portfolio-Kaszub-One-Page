@@ -46,18 +46,6 @@ $(window).on('scroll',function () {
 });
 });
 
-/*
-function scrollDown() {
-    let position = $(this).scrollTop();
-    window.scrollBy(0, 700-position);
-}
-
-function hamburgerSlideMenu() {
-  $('#outHamburger').slideToggle(500);
-};
-*/
-
-
 /* HAMBURGER MENU TOGGLE SCRIPT */
 function navToggle(x) {
     
@@ -66,23 +54,28 @@ function navToggle(x) {
     let nav = document.getElementById("outHamburger");
     let main = document.getElementById("nav");
     let menu = document.getElementsByClassName("menuitems");
+    let arrow = document.getElementsByClassName("downArrow");
 
 	//to close
 	if (main.style.height === "275px") {
+    arrow[0].style.zIndex="1000";
 	main.style.height = "0px";
     	let i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="0.0";
 	menu[i].style.marginTop="100px";
+    menu[i].style.pointerEvents = "none";
 	};
 	} 
 	//to open
 	else if (main.style.height <= "50px") {
+    arrow[0].style.zIndex="990";
 	main.style.height = "275px";
     	let i = 0;
     	for (i = 0; i < menu.length; i++){
 	menu[i].style.opacity="1.0";
 	menu[i].style.marginTop="0px";
+    menu[i].style.pointerEvents = "auto";
 	};
 	}
 };
@@ -95,25 +88,6 @@ $('#preloader').fadeOut('slow',function(){$(this).remove();});
 
 });
 
-/*
-function onReady(callback) {
-  var intervalId = window.setInterval(function() {
-    if (document.getElementsByTagName('body')[0] !== undefined) {
-      window.clearInterval(intervalId);
-      callback.call(this);
-    }
-  }, 1000);
-}
-
-function setVisible(selector, visible) {
-  document.querySelector(selector).style.display = visible ? 'block' : 'none';
-}
-
-onReady(function() {
-  setVisible('.page', true);
-  setVisible('#preloader', false);
-});
-*/
 
 $(window).ready(function(){
 AOS.init({

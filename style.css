@@ -195,8 +195,10 @@ nav li {
     margin-left: auto;
     margin-right: auto;
 }
-.menuitems {
+.menuitems { 
   width: 100%;
+  pointer-events: none;
+  margin-top: 100px;
   padding-top: 12px;
   text-decoration: none;
   list-style: none; 
@@ -314,7 +316,7 @@ nav li {
 .downArrow {
     left: 50%;
     transform: translateX(-50%);
-    z-index: 950;
+    z-index: 1000;
     position: absolute;
     cursor: pointer;
     animation: bouncearrow 2s infinite;
