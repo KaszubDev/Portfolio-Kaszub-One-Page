@@ -80,6 +80,8 @@ function navToggle(x) {
 	}
 };
 
+/* HAMBURGER CLOSE WHEN CLICK OUTSIDE */
+
 /* PRELOAD FADEOUT FUNCTION */
 
 $(window).on("load", function () {

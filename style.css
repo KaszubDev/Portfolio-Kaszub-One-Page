@@ -220,7 +220,7 @@ nav li {
   height: 1px;
   background: #ffff4d;
   z-index: 999;
-  transition: width .2s;
+  transition: width .5s;
 }
 .menuitems:hover {
     color: #ffff4d;
@@ -229,6 +229,7 @@ nav li {
     width: 100%;
 }
 .hamburgerNav.scrolled, #outHamburger.scrolled {
+    padding-bottom: 0px;
     background: #000;
 }
 
