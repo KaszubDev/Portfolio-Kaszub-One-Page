@@ -82,6 +82,18 @@ function navToggle(x) {
 
 /* HAMBURGER CLOSE WHEN CLICK OUTSIDE */
 
+$(window).ready(function(){
+    let container = document.getElementById('nav');
+    let hamburgerIcon = document.getElementsByClassName('hamburgerIcon')[0];
+    
+    document.addEventListener('click', function( event ) {
+    if (container !== event.target && !container.contains(event.target) && !hamburgerIcon.contains(event.target) && container.style.height === "275px") {    
+    console.log('clicking outside the div');
+    navToggle(hamburgerIcon);
+  }
+}); 
+});
+
 /* PRELOAD FADEOUT FUNCTION */
 
 $(window).on("load", function () {
