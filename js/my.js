@@ -59,6 +59,7 @@ function navToggle(x) {
     let menu = document.getElementsByClassName("menuitems");
     let arrow = document.getElementsByClassName("downArrow");
     let projectItems = document.getElementsByClassName("projectItems");
+    let formIndex = document.getElementsByClassName("formIndex");
 
 	//to close
 	if (main.style.height === "275px") {
@@ -70,6 +71,7 @@ function navToggle(x) {
 	menu[i].style.marginTop="100px";
     menu[i].style.pointerEvents = "none";
     projectItems[i].style.zIndex = "1000";
+    formIndex[i].style.zIndex = "1000";
 	};
 	} 
 	//to open
@@ -82,6 +84,7 @@ function navToggle(x) {
 	menu[i].style.marginTop="0px";
     menu[i].style.pointerEvents = "auto";
     projectItems[i].style.zIndex = "0";
+    formIndex[i].style.zIndex = "0";
 	};
 	}
 };
