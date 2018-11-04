@@ -11,17 +11,20 @@ $(window).on('scroll', function () {
     let top = $(this).offset().top - nav_height,
         bottom = top + $(this).outerHeight();
       
-    if (cur_pos == top) {
-        $('home').addClass('active');
-        sections.removeClass('active');
-    } 
- 
     if (cur_pos >= top && cur_pos <= bottom) {
       nav.find('a').removeClass('active');
       sections.removeClass('active');
  
       $(this).addClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    }
+      
+    if (cur_pos == 0) {
+        nav.find('a').removeClass('active');
+        sections.removeClass('active');
+        
+        $('#home').addClass('active');
+        nav.find('a[href="#home"]').addClass('active');
     }
   });
 });   
@@ -55,6 +58,7 @@ function navToggle(x) {
     let main = document.getElementById("nav");
     let menu = document.getElementsByClassName("menuitems");
     let arrow = document.getElementsByClassName("downArrow");
+    let projectItems = document.getElementsByClassName("projectItems");
 
 	//to close
 	if (main.style.height === "275px") {
@@ -65,6 +69,7 @@ function navToggle(x) {
 	menu[i].style.opacity="0.0";
 	menu[i].style.marginTop="100px";
     menu[i].style.pointerEvents = "none";
+    projectItems[i].style.zIndex = "1000";
 	};
 	} 
 	//to open
@@ -76,6 +81,7 @@ function navToggle(x) {
 	menu[i].style.opacity="1.0";
 	menu[i].style.marginTop="0px";
     menu[i].style.pointerEvents = "auto";
+    projectItems[i].style.zIndex = "0";
 	};
 	}
 };
@@ -87,10 +93,9 @@ $(window).ready(function(){
     let hamburgerIcon = document.getElementsByClassName('hamburgerIcon')[0];
     
     document.addEventListener('click', function( event ) {
-    if (container !== event.target && !container.contains(event.target) && !hamburgerIcon.contains(event.target) && container.style.height === "275px") {    
-    console.log('clicking outside the div');
+    if (container !== event.target && !container.contains(event.target) && !hamburgerIcon.contains(event.target) && container.style.height === "275px") {
     navToggle(hamburgerIcon);
-  }
+    }
 }); 
 });
 
@@ -102,9 +107,39 @@ $('#preloader').fadeOut('slow',function(){$(this).remove();});
 
 });
 
+// INITIALIZE AOS ANIMATION
 
 $(window).ready(function(){
 AOS.init({
     duration: 1200,
     })
 });
+
+// INITIALIZE SLICK SLIDER
+/*
+$(document).ready(function(){
+  $('.skill-icons-slider').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   dots: true,
+   focusOnSelect: true
+ });
+});
+*/
+/*
+$(document).ready(function(){
+    var bar = new ProgressBar.Circle(progressBar, {
+            strokeWidth: 5,
+            easing: 'easeInOut',
+            duration: 3000,
+            color: '#eee',
+            trailColor: '#FFEA82',
+            trailWidth: 1,
+            });
+    bar.animate(1.0);
+});
+*/
+
+
+
+

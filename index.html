@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaszub-Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet">
 </head>
@@ -22,11 +23,11 @@
       <a class="logo" href="#home"><span id="ka">Ka</span>szub</a>
        <ul>
           <div id="menu-items">
-           <li><a class="btn active" href="#home" onclick="activeClass()">Home</a></li>
-           <li><a class="btn" href="#about" onclick="activeClass()">About</a></li>
-           <li><a class="btn" href="#projects" onclick="activeClass()">Projects</a></li>
-           <li><a class="btn" href="#skills" onclick="activeClass()">Skills</a></li>
-           <li><a class="btn" href="#contact" onclick="activeClass()">Contact</a></li>
+           <li><a class="btn active" href="#home">Home</a></li>
+           <li><a class="btn" href="#about">About</a></li>
+           <li><a class="btn" href="#projects">Projects</a></li>
+           <li><a class="btn" href="#skills">Skills</a></li>
+           <li><a class="btn" href="#contact">Contact</a></li>
            </div>
            <button class="hamburgerIcon" type="button" data-toggle="collapse" data-target="#mainmenu" onclick="navToggle(this)">
              <div>
@@ -69,21 +70,21 @@
                <ul class="social-items">
                    <li>
                    <div class="social-item">
-                    <a href="https://www.linkedin.com/in/krzysztof-kaszubowski" target="_blank">
+                    <a href="https://www.linkedin.com/in/krzysztof-kaszubowski" target="_blank" title="Linkedin Profile">
                     <img src="img/linkedin.png">
                     </a> 
                        </div>  
                    </li>
                    <li>
                    <div class="social-item">
-                    <a href="https://www.facebook.com/krzysztof.kaszubowski.71" target="_blank">
+                    <a href="https://www.facebook.com/krzysztof.kaszubowski.71" target="_blank" title="Facebook Profile">
                     <img src="img/facebook.png">
                     </a>
                        </div>   
                    </li>
                    <li>
                    <div class="social-item">
-                    <a href="https://github.com/KaszubDev" target="_blank">
+                    <a href="https://github.com/KaszubDev" target="_blank" title="Github Profile">
                     <img src="img/github.png">
                     </a>
                        </div>   
@@ -116,16 +117,123 @@
        <div class="photo" data-aos="fade-right" data-aos-once="true" data-aos-delay="50">
            </div>
         </section>
-        <section class="content" id="projects">
-            <h1>Projects.</h1>
+        <section class="projectsSection" id="projects">
+            <h1 class="section-title-h1">Projects.</h1>
+            <div class="row" id="myProjects">
+             <div class="projectItems" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
+              <a href="https://github.com/KaszubDev/Shoot-It-The-Game" target="_blank">
+                  <img src="img/Shoot%20It%20The%20Game.png">
+              </a>
+              <a href="https://github.com/KaszubDev/Shoot-It-The-Game" target="_blank">
+              <h2>Phaser Game</h2>
+              </a>
+              <p>It is my first major project. I created it using JavaScript and Phaser Game Framework.</p>
+             </div>
+             <div class="projectItems" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
+              <a href="https://github.com/KaszubDev/Portfolio-Kaszub-One-Page" target="_blank">
+                  <img src="img/portfolioImage.png">
+              </a>
+              <a href="https://github.com/KaszubDev/Portfolio-Kaszub-One-Page" target="_blank">
+              <h2>Portfolio Page</h2>
+                 </a>
+              <p>This is the website you are visiting now. Used technologies: HTML + CSS + JS</p>
+             </div>
+             <div class="projectItems" data-aos="fade-right" data-aos-once="true" data-aos-delay="500">
+              <a href="#" target="_blank" style="pointer-events: none; cursor: default">
+                  <img src="img/futureProject.png" style="opacity: 0.5;">
+              </a>
+              <h2>&lt;Future Project&gt;</h2>
+             </div>
+            </div>
         </section>
-        <section class="section" id="skills">
+        <section class="skillsSection" id="skills">
+            <h1 class="section-title-h1 section-title-h1-white">Skills.</h1>
+               <!-- SLIDER ELEMENTS
+                <div class="slider-container">
+                    <div class="skill-icons-slider">
+                       <div class="slider-items"> HEY </div>
+                       <div class="slider-items"> HEY </div> 
+                       <div class="slider-items"> HEY </div> 
+                       <div class="slider-items"> HEY </div>
+                    </div>  
+                </div>
+                -->
+            <div class="row" id="skills_div">
+               <div class="skill-item">
+                 <img src="img/html-circle.png">
+                  <div id="progressBar">
+                      <div id="myHTML">
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="50"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="150"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="250"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="350"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="450"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="550"></div>
+                          <div class="innerDiv last" data-aos="fade-up" data-aos-once="true" data-aos-delay="650"></div>
+                      </div>
+                  </div>
+               </div>
+               <div class="skill-item">
+                   <img src="img/css-circle.png">
+                   <div id="progressBar">
+                       <div id="myCSS">
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="50"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="150"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="250"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="350"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="450"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="550"></div>
+                          <div class="innerDiv last" data-aos="fade-up" data-aos-once="true" data-aos-delay="650"></div>
+                       </div>
+                   </div>
+               </div>
+               <div class="skill-item">
+                   <img src="img/js-circle.png">
+                   <div id="progressBar">
+                       <div id="myJS">
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="50"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="150"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="250"></div>
+                          <div class="innerDiv" data-aos="fade-up" data-aos-once="true" data-aos-delay="350"></div>
+                          <div class="innerDiv last" data-aos="fade-up" data-aos-once="true" data-aos-delay="450"></div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="skillsSection-text">
+            <p>I usually use the technologies listed above, but I also know the basics of Bootstrap 4, jQuery, Git, WordPress, XML, SQL and Phaser.</p>
+            </div>
         </section>
-        <section class="section3"> <div class="color-overlay" id="overlay-section"></div> </section>
-        <section class="contact" id="contact"></section>
+        <section class="fixedImage"> 
+        <div class="color-overlay" id="overlay-section">
+        </div>
+        <div class="fixedImage-text">
+                <h2>Living, learning, &amp; leveling up one day at a time.</h2>
+            </div> 
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="section-title-h1 section-title-h1-white">Let's Talk</h1>
+            <div class="contactForm">
+                <div class="nameArea">
+                    <input class="textName" type="text" name="Type your name" placeholder="Your Name">
+                </div>
+                <div class="emailArea">
+                    <input class="textEmail" type="text" placeholder="Your E-mail">
+                </div>
+                <div class="subjectArea">
+                    <input class="textSubject" type="text" placeholder="Your Subject">
+                </div>
+                <div class="messageArea">
+                    <input class="textMessage" type="text" placeholder="Your Message">
+                </div>
+                
+                <button type="submit" class="submitButton">Send Message</button>
+              
+            </div>
+        </section>
         <section class="footer">
             <div class="row">
-               <p class="footer-text">©Copyright All-Right Reserved by Krzysztof Kaszubowski</p> 
+               <p class="footer-text">©Made with <i class="fas fa-heart" style="color: red;"></i> by Krzysztof Kaszubowski</p> 
             </div>    
         </section>
         
@@ -135,7 +243,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/my.js"></script>
         <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
-
+        
         <script type="text/javascript">
           var typed = new Typed(".caption", {
           strings: ["I'm Krzysztof", "I'm a web developer","I'm a fighter", "I'm a dreamer", "From Silesia", "Living in Kraków"],
@@ -145,7 +253,6 @@
           backDelay: 800,
           loop: true,
         });
-            </script>
-
+        </script>
     </body>
 </html>
