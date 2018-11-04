@@ -782,6 +782,14 @@ nav li {
         transform: none;
     }
 }
+@media only screen and (min-width: 1600px) {
+    .downArrow {
+        animation: bouncearrowMobile1600 2s infinite;
+    }
+    .fixedImage-text {
+        left: 25%;
+    }
+}
 /*
 @keyframes bouncearrow {
     0% {top: 410px }
@@ -803,6 +811,11 @@ nav li {
     0% {top: 540px }
     50% {top: 550px }
     100% {top: 540px }
+}
+@keyframes bouncearrowMobile1600 {
+    0% {top: 800px}
+    50% {top: 840px}
+    100% {top: 800px}
 }
 /* @media only screen and (max-width: 900px) {
    .menu {width:88%; position:absolute; height:30px;}
