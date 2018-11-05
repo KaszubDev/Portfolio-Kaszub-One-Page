@@ -70,8 +70,6 @@ function navToggle(x) {
 	menu[i].style.opacity="0.0";
 	menu[i].style.marginTop="100px";
     menu[i].style.pointerEvents = "none";
-    projectItems[i].style.zIndex = "1000";
-    formIndex[i].style.zIndex = "1000";
 	};
 	} 
 	//to open
@@ -83,8 +81,6 @@ function navToggle(x) {
 	menu[i].style.opacity="1.0";
 	menu[i].style.marginTop="0px";
     menu[i].style.pointerEvents = "auto";
-    projectItems[i].style.zIndex = "0";
-    formIndex[i].style.zIndex = "0";
 	};
 	}
 };
