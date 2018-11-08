@@ -794,13 +794,6 @@ input:focus, button:focus, textarea:focus {
         left: 25%;
     }
 }
-/*
-@keyframes bouncearrow {
-    0% {top: 410px }
-    50% {top: 430px }
-    100% {top: 410px }
-}
-*/
 @keyframes bouncearrow {
     0% {top: 650px }
     50% {top: 680px }
@@ -821,11 +814,3 @@ input:focus, button:focus, textarea:focus {
     50% {top: 840px}
     100% {top: 800px}
 }
-/* @media only screen and (max-width: 900px) {
-   .menu {width:88%; position:absolute; height:30px;}
-   .menu h5 {display: none;}
-   .menu ul li {display: inline; }
-   .menu ul li:after {content: " |";}
-   .content {width: 98%;position:relative; top: 30px;margin-top:5%;}
-}
-*/

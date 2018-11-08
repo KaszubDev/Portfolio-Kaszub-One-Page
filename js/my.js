@@ -113,32 +113,3 @@ AOS.init({
     duration: 1200,
     })
 });
-
-// INITIALIZE SLICK SLIDER
-/*
-$(document).ready(function(){
-  $('.skill-icons-slider').slick({
-   slidesToShow: 3,
-   slidesToScroll: 1,
-   dots: true,
-   focusOnSelect: true
- });
-});
-*/
-/*
-$(document).ready(function(){
-    var bar = new ProgressBar.Circle(progressBar, {
-            strokeWidth: 5,
-            easing: 'easeInOut',
-            duration: 3000,
-            color: '#eee',
-            trailColor: '#FFEA82',
-            trailWidth: 1,
-            });
-    bar.animate(1.0);
-});
-*/
-
-
-
-

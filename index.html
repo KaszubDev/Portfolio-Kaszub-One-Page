@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -148,16 +148,6 @@
         </section>
         <section class="skillsSection" id="skills">
             <h1 class="section-title-h1 section-title-h1-white">Skills.</h1>
-               <!-- SLIDER ELEMENTS
-                <div class="slider-container">
-                    <div class="skill-icons-slider">
-                       <div class="slider-items"> HEY </div>
-                       <div class="slider-items"> HEY </div> 
-                       <div class="slider-items"> HEY </div> 
-                       <div class="slider-items"> HEY </div>
-                    </div>  
-                </div>
-                -->
             <div class="row" id="skills_div">
                <div class="skill-item">
                  <img src="img/html-circle.png">
@@ -214,21 +204,23 @@
         <section class="contact" id="contact">
             <h1 class="section-title-h1 section-title-h1-white">Let's Talk</h1>
             <div class="contactForm">
+               <form action="https://formspree.io/kaszubowskikrzys@gmail.com" method="POST" name="form1">
                 <div class="nameArea">
-                    <input class="textName" type="text" name="Type your name" placeholder="Your Name">
+                    <input class="textName" type="text" name="name" placeholder="Your Name" minlength="3" title="Minimum length is 3" required>
                 </div>
                 <div class="emailArea">
-                    <input class="textEmail" type="text" placeholder="Your E-mail">
+                    <input class="textEmail" type="text" name="email" placeholder="Your E-mail" title="e.g. john.smith@example.com" pattern="^([0-9]{9})|([A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})$" required>
                 </div>
                 <div class="subjectArea">
-                    <input class="textSubject" type="text" placeholder="Your Subject">
+                    <input class="textSubject" type="text" name="subject" placeholder="Your Subject">
                 </div>
                 <div class="messageArea">
-                    <textarea class="textMessage" placeholder="Your Message" name="message"></textarea>
+                    <textarea class="textMessage" placeholder="Your Message" name="message" required></textarea>
                 </div>
                 
-                <button type="submit" class="submitButton" name="submit">Send Message</button>
-              
+                <button type="submit" class="submitButton">Send Message</button>
+                
+                </form>
             </div>
         </section>
         <section class="footer">
