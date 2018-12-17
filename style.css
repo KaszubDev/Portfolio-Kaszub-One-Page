@@ -8,7 +8,9 @@
 body { 
     font: 16px Verdana; 
     line-height: 1.6;
-     }
+    width: 100% !important;
+    overflow-x: hidden;     
+}
 /* PRELOAD CSS BELOW */
 #preloader {
     position: fixed;
@@ -79,7 +81,7 @@ nav {
     transition: all .5s ease-out;
     background-color: transparent;
     font-size: 15px;
-    width: 100%;
+    width: 100% !important;
     position: fixed;
     display: flex;
     overflow: hidden;
