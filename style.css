@@ -277,7 +277,6 @@ nav li {
     top: 220px;
     position: fixed;
     text-align: center;
-    margin-left: 10px;
 }
 .social-items {
     text-align: initial;
@@ -749,7 +748,10 @@ input:focus, button:focus, textarea:focus {
    .social-items img {
     max-width: 20px;
     max-height: 20px;
-}
+    }
+    .social-items {
+        padding-left: 5%;
+    }
     .empty-yellow {
         width: 60%;
     }
