@@ -6,7 +6,8 @@
     scroll-behavior: smooth;
 }
 body { 
-    font: 16px Verdana; 
+    font-family: Verdana,Geneva,sans-serif; 
+    font-size: 16px; 
     line-height: 1.6;
     width: 100% !important;
     overflow-x: hidden;     
@@ -680,7 +681,6 @@ input:focus, button:focus, textarea:focus {
     }
     .downArrow {
         font-size: 10px;
-        animation: bouncearrowMobile900 2s infinite;
     }
     .scrollUp {
         left: 85%;
@@ -778,7 +778,6 @@ input:focus, button:focus, textarea:focus {
     }
     .downArrow {
         font-size: 10px;
-        animation: bouncearrowMobile600 2s infinite;
     }
     .logo {
     font-weight: bold;
@@ -791,30 +790,12 @@ input:focus, button:focus, textarea:focus {
     }
 }
 @media only screen and (min-width: 1600px) {
-    .downArrow {
-        animation: bouncearrowMobile1600 2s infinite;
-    }
     .fixedImage-text {
         left: 25%;
     }
 }
 @keyframes bouncearrow {
-    0% {top: 650px }
-    50% {top: 680px }
-    100% {top: 650px }
-}
-@keyframes bouncearrowMobile900 {
-    0% {top: 580px }
-    50% {top: 600px }
-    100% {top: 580px }
-}
-@keyframes bouncearrowMobile600 {
-    0% {top: 540px }
-    50% {top: 550px }
-    100% {top: 540px }
-}
-@keyframes bouncearrowMobile1600 {
-    0% {top: 800px}
-    50% {top: 840px}
-    100% {top: 800px}
+    0% {top: 85% }
+    50% {top: 90% }
+    100% {top: 85% }
 }
