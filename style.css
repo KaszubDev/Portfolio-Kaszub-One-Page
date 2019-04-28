@@ -448,7 +448,7 @@ nav li {
     clear:both;  /* clear the floats */
 }
 .projectItems p {
-    float: center;
+    margin: 5%;
     line-height: 28px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
