@@ -243,8 +243,8 @@ nav li {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-size: cover;
     background: url('img/header-background.jpg') no-repeat;
+    background-size: cover;
 }
 .color-overlay {
     height: 100%;
@@ -424,10 +424,9 @@ nav li {
 }
 #myProjects {
     background-color: transparent;
-    display: inline-block;
     padding-top: 40px;
     overflow: hidden;
-    margin: -1.5%;
+    padding-bottom: 100px;
 }
 .projectItems {
     color: #F2F4EC;
@@ -436,8 +435,6 @@ nav li {
     text-align: center;
     display: inline-block;
     position: relative;
-    float: left;
-    width:30.3333%;
     height: 475px;
     background-color: #0F1113;
     font-family: 'Raleway', sans-serif;
@@ -494,7 +491,7 @@ nav li {
     padding: 0;
 }
 .skill-item {
-    margin: 20px;
+    margin: 20px auto;
     display: inline-block;
     width: 200px;
     height: 350px;
@@ -590,7 +587,9 @@ nav li {
     background-color: transparent;
     margin: 0 auto;
     padding-top: 100px;
-    display: table;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2%;
 }
 .contactForm {
     margin-top: 40px;
@@ -721,12 +720,6 @@ input:focus, button:focus, textarea:focus {
         width: 100%;
         max-height: 350px;
     }
-    #myProjects {
-        margin: 0;
-        display: block;
-        width: 100%;
-        padding-bottom: 50px;
-    }
     .skillsSection-text {
         font-size: 18px;
         width: 80%;
@@ -741,6 +734,12 @@ input:focus, button:focus, textarea:focus {
     }
     .contact {
         height: 800px;
+    }
+    .row {
+        display: block;
+    }
+    #myProjects {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 1200px) {
