@@ -561,7 +561,7 @@ nav li {
     opacity: .4;
 }
 .fixedImage-text {
-   position: sticky;
+   position: relative;
    float: left;
    display: block;
    left: 18%;
@@ -652,6 +652,18 @@ input:focus, button:focus, textarea:focus {
     padding: 0;
     color: #f7f7f7;
     float: right;
+}
+@supports (position: sticky) {
+    .fixedImage-text {
+        position: sticky !important;
+        margin: 10% auto !important;
+    }
+}
+@supports (-moz-appearance:none) {
+    .fixedImage-text {
+        position: relative !important;
+        margin-top: 15% !important;
+    }
 }
 @media only screen and (max-width: 900px) {
     .header-content h3 {
@@ -786,10 +798,15 @@ input:focus, button:focus, textarea:focus {
         margin-left: 0;
         transform: none;
     }
+    .fixedImage-text {
+        margin-top: 45%;
+        position: relative;
+    }
 }
 @media only screen and (min-width: 1600px) {
     .fixedImage-text {
         left: 25%;
+        margin: 5% auto !important;
     }
 }
 @keyframes bouncearrow {
